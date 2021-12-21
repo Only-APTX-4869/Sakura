@@ -4,17 +4,33 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello 刘永欣',
+    motto: '把你的小秘密藏在岛上吧',
+    watchMessage:'看留言',writeMessage:'写留言',
     userInfo: {},
-    hasUserInfo: false,
+    hasUserInfo: true,//false 时点击认证获取
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    // canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+   
   },
   // 事件处理函数
+  viewTapRead(){
+    // 看留言
+    wx.navigateTo({
+         url:'../rdmsg/rdmsg'
+       })
+  },
+  viewTapWrite(){
+  // 写留言
+  wx.navigateTo({
+    url:'../writemsg/writemsg'
+  })
+  
+  },
   bindViewTap() {
     wx.navigateTo({
-      url: '../logs/logs'
+   //   url: '../logs/logs'
+      url:'../jisuanqi/jsq'
     })
   },
   onLoad() {

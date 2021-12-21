@@ -1,0 +1,35 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.welcome{
+  color: pink;
+  margin-right: -250rpx;
+  margin-top: -100rpx;
+}
+.userinfo-avatar {
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  margin-left: -400rpx;
+  border-radius: 50%; /* 半圆 */
+}
+.viewText{
+  margin-left: 0rpx;
+  margin-top:  150rpx;
+}
+.text{
+  color: pink;
+}
+.inputText{
+  margin-bottom: 20rpx;
+}
+.Submit{
+  margin-top: 100rpx;
+  background-color: pink;
+}

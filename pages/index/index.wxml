@@ -1,10 +1,12 @@
 <!--index.wxml-->
 <view class="container">
+  
   <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
       <view class="userinfo-avatar" bindtap="bindViewTap">
         <open-data type="userAvatarUrl"></open-data>
       </view>
+      <!-- 用户昵称 -->
       <open-data type="userNickName"></open-data>
     </block>
     <block wx:elif="{{!hasUserInfo}}">
@@ -13,12 +15,25 @@
       <view wx:else> 请使用1.4.4及以上版本基础库 </view>
     </block>
     <block wx:else>
+    <!-- 用户头像 -->
       <image bindtap="bindViewTap" class="userinfo-avatar" 
-      src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      src="1.jpg" mode="cover"></image>
+      <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
     </block>
-  </view>
-  <view class="usermotto">
+    <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  </view>
+  <!-- 按钮跳转 -->
+  <view class="viewButton1"><button class="viewButtonWatch" bindtap="viewTapRead"><text class="viewButtonText">{{watchMessage}}</text></button></view>
+  <view class="viewButton2"><button class="viewButtonWrite" bindtap="viewTapWrite"><text class="viewButtonText">{{writeMessage}}</text></button></view> 
+  <!-- 座右铭 -->
 </view>
+
+<template name="demo">
+ <view class='tempDemo'>
+   <text class='name'>FirstName: {{firstName}}, LastName: {{lastName}}</text>
+   <text class='fr' bindtap="clickMe" data-name="{{'Hello! I am '+firstName+' '+LastName+'!'}}"> clcikMe </text>
+ </view>
+</template>
+

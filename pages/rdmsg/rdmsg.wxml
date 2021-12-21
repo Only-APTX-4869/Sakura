@@ -1,0 +1,24 @@
+<!--rdMsg.wxml-->
+<view class="container log-list">
+<image class=".logo" src="../index/1.jpg"></image>
+<text class="welcome">{{msg}}</text>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="writeView">
+  <text class="writeText">我的名字</text>
+  <input class="inputText" name ="myName" id="myName"  placeholder="请填写好友名字或暗号"/>
+</view>
+<view class="rdView" >
+  <button class="submit" formType="submit">查看留言</button> 
+</view>
+<view class="msgView">
+<form> 
+<text class="writeText">给你的留言</text>
+<text id="msgText">{{rdMsg}}</text>
+</form>
+<view class="home-header-line"></view>
+</view>
+</form>
+
+<view>
+</view>
+</view>

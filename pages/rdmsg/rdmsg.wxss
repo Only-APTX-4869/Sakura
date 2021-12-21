@@ -1,0 +1,42 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.logo {
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  /* margin: 20rpx; */
+  margin-left: -350rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+}
+.welcome{
+  color: pink;
+  margin-right: -250rpx;
+  margin-top: -100rpx;
+}
+.writeView{
+margin-top: 250rpx;
+}
+.writeText{
+  color: pink;
+}
+.rdView{
+  margin-top: 100rpx;
+}
+.submit{
+  background-color: pink;
+}
+.home-header-line{
+  background: #e0e3da;
+  width: 100%;
+  height: 2rpx;
+}
+.msgView{
+  margin-top: 50rpx;
+}

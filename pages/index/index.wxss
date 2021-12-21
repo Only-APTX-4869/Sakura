@@ -8,12 +8,33 @@
 
 .userinfo-avatar {
   overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
+  width: 150rpx;
+  height: 150rpx;
   margin: 20rpx;
   border-radius: 50%;
 }
 
 .usermotto {
-  margin-top: 200px;
+  font-size: 16px "microsoft yahei";
+  margin-top: 100px;
+  color: pink;
 }
+.tempDemo{
+    width:100%;
+  }
+ view.tempDemo .name{color:darkorange}
+ .viewButton1{
+margin-bottom: 30px;
+ }
+ .viewButton2{
+  margin-bottom: auto;
+   }
+  .viewButtonWatch{
+    background-color: pink;
+  }
+  .viewButtonWrite{
+    background-color: pink;
+  }
+  .viewButtonText{
+ color: white;
+  }
