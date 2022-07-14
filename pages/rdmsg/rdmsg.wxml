@@ -12,7 +12,7 @@
 </view>
 <view class="msgView">
 <form> 
-<text class="writeText">给你的留言</text>
+<text class="writeText">给你的留言:</text>
 <text id="msgText">{{rdMsg}}</text>
 </form>
 <view class="home-header-line"></view>

@@ -11,7 +11,7 @@
   <text class="text">留言内容</text>  
   <input class="inputText" name="userMsg" placeholder="请填写留言内容"/></view></view>
 <view class="SubmitView" >
-  <button class="Submit" formType="submit">提交留言</button> 
+  <button class="Submit" formType="submit">{{submitButton}}</button> 
 </view>
 </form>
 </view>

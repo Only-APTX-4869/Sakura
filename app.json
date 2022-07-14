@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/rdmsg/rdmsg",
+    "pages/writemsg/writemsg"
   ],
   "window":{
     "backgroundTextStyle":"light",
